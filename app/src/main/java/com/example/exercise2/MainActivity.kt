@@ -30,6 +30,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -75,58 +76,12 @@ fun HomePage() {
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.SpaceEvenly
                     ) {
-                        IconButton(
-                            content = {
-                                Icon(
-                                    imageVector = Icons.Filled.Favorite, contentDescription = null
-                                )
-                            },
-                            onClick = {
-
-                            }
-                        )
-                        IconButton(
-                                content = {
-                                    Icon(
-                                        imageVector = Icons.Filled.Call, contentDescription = null
-                                    )
-                                },
-                        onClick = {
-
-                        }
-                        )
-                        IconButton(
-                            content = {
-                                Icon(
-                                    imageVector = Icons.Filled.Email, contentDescription = null
-                                )
-                            },
-                            onClick = {
-
-                            }
-                        )
-                        IconButton(
-                            content = {
-                                Icon(
-                                    imageVector = Icons.Filled.Send, contentDescription = null
-                                )
-                            },
-                            onClick = {
-
-                            }
-                        )
-                        IconButton(
-                            content = {
-                                Icon(
-                                    imageVector = Icons.Filled.Build, contentDescription = null
-                                )
-                            },
-                            onClick = {
-
-                            }
-                        )
+                        CustomIconButton(imageVector = Icons.Filled.Favorite, onClick = { /* Handle onClick */ })
+                        CustomIconButton(imageVector = Icons.Filled.Call, onClick = { /* Handle onClick */ })
+                        CustomIconButton(imageVector = Icons.Filled.Email, onClick = { /* Handle onClick */ })
+                        CustomIconButton(imageVector = Icons.Filled.Send, onClick = { /* Handle onClick */ })
+                        CustomIconButton(imageVector = Icons.Filled.Build, onClick = { /* Handle onClick */ })
                     }
-
                 }
             }
         ) { contentPadding ->
@@ -161,6 +116,19 @@ fun HomePage() {
         }
     }
 }
+
+@Composable
+fun CustomIconButton(imageVector: ImageVector, onClick: () -> Unit) {
+    IconButton(
+        onClick = onClick
+    ) {
+        Icon(
+            imageVector = imageVector,
+            contentDescription = null
+        )
+    }
+}
+
 
 @Preview(showBackground = true)
 @Composable
