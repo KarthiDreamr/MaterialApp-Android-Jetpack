@@ -20,4 +20,4 @@ Welcome to the repository for the MaterialApp Android application built using Je
 
 ## License 📝
 
-This project is licensed under the GNU General Public License (GPL-3.0). The GPL is a strong copyleft license that requires improvements to be shared back with the community. For more information, see the (LICENSE)[LICENSE] file.
+This project is licensed under the GNU General Public License (GPL-3.0). The GPL is a strong copyleft license that requires improvements to be shared back with the community. For more information, see the [LICENSE](LICENSE) file.
