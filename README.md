@@ -4,9 +4,20 @@ Welcome to the repository for the MaterialApp Android application built using Je
 
 ## Features 🎯
 
-- Simple and intuitive UI
-- Built with Jetpack Compose
-- Demonstrates the use of Material Design components in Compose
+### 1. MainActivity
+- Inherits from `ComponentActivity`, which is a lean and modern `Activity` class designed for use with Jetpack Compose.
+- In the `onCreate` method, it sets the content to a `Exercise1Theme` which contains a `Surface` that fills the maximum size of the screen. The `Surface`'s color is set to the background color of the current `MaterialTheme`.
+- Inside the `Surface`, it calls the `Greeting` composable function.
+
+### 2. Greeting Composable
+- This is a composable function that displays a `Column` with a `Text` and a `Button`.
+- The `Text` displays the current tap count.
+- The `Button`, when clicked, increments the tap count and shows a `Toast` with the current tap count.
+- The `Column` fills the maximum size of the screen and centers its children both horizontally and vertically.
+
+### 3. GreetingPreview Composable
+- This is a preview composable function that previews the `Greeting` composable.
+- It wraps the `Greeting` composable with the `Exercise1Theme`.
 
 ## Screenshots 📸
 
