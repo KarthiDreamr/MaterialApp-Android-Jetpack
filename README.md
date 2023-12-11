@@ -4,20 +4,11 @@ Welcome to the repository for the MaterialApp Android application built using Je
 
 ## Features 🎯
 
-### 1. MainActivity
-- Inherits from `ComponentActivity`, which is a lean and modern `Activity` class designed for use with Jetpack Compose.
-- In the `onCreate` method, it sets the content to a `Exercise1Theme` which contains a `Surface` that fills the maximum size of the screen. The `Surface`'s color is set to the background color of the current `MaterialTheme`.
-- Inside the `Surface`, it calls the `Greeting` composable function.
-
-### 2. Greeting Composable
-- This is a composable function that displays a `Column` with a `Text` and a `Button`.
-- The `Text` displays the current tap count.
-- The `Button`, when clicked, increments the tap count and shows a `Toast` with the current tap count.
-- The `Column` fills the maximum size of the screen and centers its children both horizontally and vertically.
-
-### 3. GreetingPreview Composable
-- This is a preview composable function that previews the `Greeting` composable.
-- It wraps the `Greeting` composable with the `Exercise1Theme`.
+- Uses `MaterialTheme` to apply a theme to its children.
+- Uses `Scaffold` to provide a layout structure for your app. The `Scaffold` includes a `TopAppBar`, `FloatingActionButton`, and `BottomAppBar`.
+- The `TopAppBar` includes a title with the text "My App".
+- The `FloatingActionButton` includes an `Icon` with an add icon.
+- The `BottomAppBar` includes a `Row` of `CustomIconButton`s. The `Row` fills the maximum width and arranges its children evenly.
 
 ## Screenshots 📸
 
