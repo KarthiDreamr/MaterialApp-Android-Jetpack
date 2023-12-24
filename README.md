@@ -12,7 +12,7 @@ Welcome to the repository for the MaterialApp Android application built using Je
 
 ## Screenshots 📸
 
-*Coming soon...*
+<img src="assets/screen1.png" width="200"/>
 
 ## How to run 🏃‍♂️
 
