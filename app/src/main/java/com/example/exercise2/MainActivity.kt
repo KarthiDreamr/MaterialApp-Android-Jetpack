@@ -6,11 +6,9 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Build
@@ -98,11 +96,11 @@ fun HomePage() {
                     "Kotlin was replaced as the Official language for Android Development by Google on 2017",
                     fontWeight = FontWeight.ExtraBold
                 )
-                Spacer(modifier = Modifier.size(10.dp))
+
                 Text("Kotlin is a cross-platform, statically typed, general-purpose high-level programming language with type inference. ")
-                Spacer(modifier = Modifier.size(10.dp))
+
                 Text("Jetpack Compose is a modern toolkit for building native Android UI. Jetpack Compose simplifies and accelerates UI development on Android with less code, powerful tools, and intuitive Kotlin APIs.")
-                Spacer(modifier = Modifier.size(10.dp))
+
                 Text(
                     "Advantages of Kotlin over Java",
                     fontWeight = FontWeight.Bold
@@ -128,7 +126,6 @@ fun CustomIconButton(imageVector: ImageVector, onClick: () -> Unit) {
         )
     }
 }
-
 
 @Preview(showBackground = true)
 @Composable
